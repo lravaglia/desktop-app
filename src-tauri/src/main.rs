@@ -1,7 +1,7 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 #![feature(lint_reasons)]
-#![deny(clippy::all, clippy::pedantic, clippy::nursery, clippy::cargo, reason = "Make sure that the code adheres to best practices.")]
+#![deny(clippy::all, clippy::pedantic, clippy::nursery, clippy::cargo, warnings, reason = "Make sure that the code adheres to best practices.")]
 #![forbid(unsafe_code, reason = "This is an application, not a library.")]
 
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
