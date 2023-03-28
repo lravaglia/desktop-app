@@ -14,8 +14,19 @@
      */
     "allowJs": true,
     "checkJs": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    // configure typescript for maximum strictness
+    "strict": true,
+    // enable all strictness-related flags
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "ignoreDeprecations": "5.0",
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
 }
