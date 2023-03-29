@@ -1,6 +1,6 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-#![feature(lint_reasons)]
+// These harsh lints ensure that the project adheres to best practices.
 #![deny(
     clippy::all,
     clippy::pedantic,
@@ -14,7 +14,6 @@
     clippy::suspicious,
     warnings,
     unsafe_code,
-    reason = "Make sure that the code adheres to best practices."
 )]
 
 #[tokio::main]
