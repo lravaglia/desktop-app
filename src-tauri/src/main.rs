@@ -13,14 +13,14 @@
     clippy::style,
     clippy::suspicious,
     warnings,
+    unsafe_code,
     reason = "Make sure that the code adheres to best practices."
 )]
-#![forbid(unsafe_code, reason = "This is an application, not a library.")]
 
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 #[tauri::command]
 fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
+    format!("Hello, {name}! You've been greeted from Rust!")
 }
 
 #[tokio::main]
