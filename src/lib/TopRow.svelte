@@ -1,15 +1,24 @@
+<script lang="ts">
+  import { currentTab, Tab } from "../stores";
+
+  /**
+   * @param tab The tab to navigate to.
+   * @returns A callback to set the tab store.
+   */
+  const setTab = (newTab: Tab) => (): void => currentTab.set(newTab);
+</script>
+
 <nav>
   <ul>
-    <li><a href="/"><h3>Home</h3></a></li>
-    <li><a href="/about"><h3>About</h3></a></li>
-    <li><a href="/contact"><h3>Contact</h3></a></li>
+    <li><button type="button" on:click={setTab(Tab.Home)}>Home</button></li>
+    <li><button type="button" on:click={setTab(Tab.Help)}>Help</button></li>
   </ul>
 </nav>
 
 <style>
   nav {
-    background: #30638E;
-    color: #D1495B;
+    background: #30638e;
+    color: #d1495b;
     padding: 1% 10%;
     margin: 0%;
   }
@@ -26,10 +35,11 @@
   li {
     display: block;
     padding: 0;
-    margin: 0%;
+    margin: 0.25rem 0%;
   }
 
-  a {
-    color: inherit;
+  button {
+    all: unset;
+    font-size: 1.5rem;
   }
 </style>
