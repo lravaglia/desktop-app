@@ -19,9 +19,7 @@
   },
   "prettier": {
     "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true
+    "tabWidth": 2
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
