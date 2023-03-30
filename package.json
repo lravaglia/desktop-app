@@ -1,5 +1,28 @@
 {
+  "private": true,
+  "type": "module",
+  "name": "desktop-app",
   "version": "0.0.0",
+  "author": {
+    "name": "Lorenzo Ravagalia",
+    "email": "lorenzo.ravaglia@hope.edu",
+    "url": "https://lorenzo.ravaglia.xyz"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,scss,md,html,json,yml,yaml}": [
+      "prettier --write --plugin-search-dir=. .",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
     "@sveltejs/vite-plugin-svelte": "^2.0.4",
@@ -26,8 +49,6 @@
     "vite": "^4.2.1",
     "vitest": "^0.29.8"
   },
-  "type": "module",
-  "name": "desktop-app",
   "scripts": {
     "preview": "vite preview",
     "dev": "vite",
@@ -40,6 +61,5 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0"
-  },
-  "private": true
+  }
 }
