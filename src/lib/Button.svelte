@@ -12,4 +12,8 @@
     all: unset;
     font-size: 1.5rem;
   }
+
+  button:hover {
+    font-weight: bold;
+  }
 </style>
