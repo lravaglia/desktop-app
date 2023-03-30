@@ -49,6 +49,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install frontend dependencies
         run: pnpm install
+      - uses: Swatinem/rust-cache@v2
+        name: Cache Rust dependencies
+        with:
+          prefix-key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       - uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
