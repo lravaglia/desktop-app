@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preinstall": "husky install",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -11,6 +12,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@commitlint/config-conventional": "^17.4.4",
     "@tauri-apps/api": "^1.2.0"
   },
   "devDependencies": {
