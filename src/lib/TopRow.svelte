@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { currentTab, Tab } from "../stores";
-  import Button from "./Button.svelte";
+  import { currentTab, Tab } from '../stores'
+  import Button from './Button.svelte'
 
   /**
    * @param newTab The tab to navigate to.
    * @returns A callback to set the tab store.
    */
-  const setTab = (newTab: Tab) => (): void => currentTab.set(newTab);
+  const setTab = (newTab: Tab) => (): void => currentTab.set(newTab)
 </script>
 
 <nav>

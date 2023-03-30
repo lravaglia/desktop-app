@@ -1,6 +1,6 @@
 <script lang="ts">
-  import TopRow from "./lib/TopRow.svelte";
-  import { currentTab, Tab } from "./stores";
+  import TopRow from './lib/TopRow.svelte'
+  import { currentTab, Tab } from './stores'
 </script>
 
 <TopRow />
