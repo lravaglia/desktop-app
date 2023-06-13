@@ -22,32 +22,32 @@
     "tabWidth": 2
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.4.4",
-    "@sveltejs/vite-plugin-svelte": "^2.0.4",
-    "@tauri-apps/cli": "^1.2.3",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@sveltejs/vite-plugin-svelte": "^2.4.1",
+    "@tauri-apps/cli": "^1.3.1",
     "@tsconfig/svelte": "^3.0.0",
-    "@types/node": "^18.15.11",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
-    "eslint": "^8.37.0",
+    "@types/node": "^18.16.17",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard-with-typescript": "^34.0.1",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-svelte3": "^4.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.8.7",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "prettier-eslint": "^15.0.1",
-    "prettier-plugin-svelte": "^2.10.0",
-    "svelte": "^3.57.0",
-    "svelte-check": "^3.1.4",
-    "svelte-preprocess": "^5.0.3",
-    "tslib": "^2.5.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.2.1",
+    "prettier-plugin-svelte": "^2.10.1",
+    "svelte": "^3.59.1",
+    "svelte-check": "^3.4.3",
+    "svelte-preprocess": "^5.0.4",
+    "tslib": "^2.5.3",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
     "vitest": "^0.29.8"
   },
   "scripts": {
@@ -59,6 +59,6 @@
     "preinstall": "husky install"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.2.0"
+    "@tauri-apps/api": "^1.3.0"
   }
 }
